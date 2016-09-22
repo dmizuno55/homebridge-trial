@@ -1,0 +1,6 @@
+- name: install libavahi-compat-libdnssd-dev
+  apt: name=libavahi-compat-libdnssd-dev state=present
+
+- name: install homebridge
+  npm: name=homebridge global=yes
+

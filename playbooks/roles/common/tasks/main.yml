@@ -1,0 +1,9 @@
+- name: add ja._JP.UTF8 to locale.gen
+  locale_gen: name=ja_JP.UTF-8 state=present
+
+- name: update apt cache
+  apt: update_cache=yes
+
+- name: install git
+  apt: name=git state=present
+
